@@ -17,5 +17,12 @@ This will produce a build artifact that you may execute as follows;
 java -jar target/spring-jetty-embedded-DEV-SNAPSHOT-full.jar
 ```
 
+You may specify the system property for external configuration at runtime;
+```bash
+java -Dserver.properties.location="file:/path/to/server2.properties" -jar target/spring-jetty-embedded-DEV-SNAPSHOT-full.jar
+```
+**Note:** the system property must be specified before the -jar argument
+
 ## Accessing Example URIs
 [Hello World Example](http://localhost:8080)
+[Running on Alternate Port](http://localhost:8081)
